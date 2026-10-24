@@ -1,4 +1,4 @@
-// root build.gradle setup framework file for the Nothing Dynamic project
+// Root-level build.gradle – contains only the buildscript block
 
 buildscript {
     repositories {
@@ -16,38 +16,4 @@ allprojects {
         google()
         mavenCentral()
     }
-}
-
-apply plugin: "com.android.application"
-apply plugin: "org.jetbrains.kotlin.android"
-
-android {
-    namespace = "com.nothing.dynamic"
-    compileSdk = 34
-
-    defaultConfig {
-        applicationId = "com.nothing.dynamic"
-        minSdk = 26
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled = false
-        }
-    }
-    
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
-}
-
-// Core library dependencies
-dependencies {
-    implementation "androidx.appcompat:appcompat:1.6.1"
-    implementation "com.google.android.material:material:1.9.0"
-    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
-    implementation "androidx.core:core-ktx:1.10.1"
 }
