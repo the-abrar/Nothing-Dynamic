@@ -1,46 +1,45 @@
-// top-level build.gradle for the "NOTHING DYNAMIC" app
-// See https://developer.android.com/studio/build for details
+// root build.gradle setup framework file for the Nothing Dynamic project
 
-plugins {
-    id 'com.android.application' version '8.4.1'
-    id 'org.jetbrains.kotlin.android' version '1.9.23'
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.4.1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.23"
+    }
 }
 
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: "com.android.application"
+apply plugin: "org.jetbrains.kotlin.android"
+
 android {
-    compileSdk 34
+    namespace = "com.nothing.dynamic"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId "com.nothing.dynamic"
-        minSdk 24
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
-        // Provisional test package name to avoid duplicate
+        applicationId = "com.nothing.dynamic"
+        minSdk = 26
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            minifyEnabled = false
         }
     }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
-    }
-
+    
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "1.7"
     }
-}
-
-dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    implementation "androidx.core:core-ktx:1.12.0"
-    implementation "androidx.appcompat:appcompat:1.6.1"
-    implementation "com.google.android.material:material:1.11.0"
-    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
-    // For overlay with display cutout
-    implementation platform("org.jetbrains.kotlin:kotlin-bom:1.9.23")
 }
