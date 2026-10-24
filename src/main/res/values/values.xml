@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <theme name="Theme.NothingDynamic" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/baseDark</item>
+        <item name="colorPrimaryVariant">@color/baseDark</item>
+        <item name="colorOnPrimary">@color/primaryText</item>
+        <item name="android:windowBackground">@color/baseDark</item>
+    </theme>
+
+    <style name="TextAppearance.Dynamic.Title" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/primaryText</item>
+    </style>
+
+    <style name="TextAppearance.Dynamic.Subtitle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/secondaryText</item>
+    </style>
+
+    <!-- Placeholder custom drawable for status indicator
+    <item name="status_indicator_bg">@drawable/status_indicator_bg</item>
+</resources>

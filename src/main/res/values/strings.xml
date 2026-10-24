@@ -1,0 +1,10 @@
+<resources>
+    <!-- Application strings used in the dynamic island bubble layout -->
+    <string name="app_title">Dynamic Island</string>
+    <string name="app_subtitle">Hello, world!</string>
+
+    <string name="status_online">Online</string>
+    <string name="status_offline">Offline</string>
+
+    <string name="accessibility_label_dynamic_island">Dynamic Island notification</string>
+</resources>

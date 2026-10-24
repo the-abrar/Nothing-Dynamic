@@ -1,0 +1,14 @@
+<resources>
+    <!-- Base dark color used for the pill background -->
+    <color name="baseDark">#222222</color>
+
+    <!-- Foreground / text colors -->
+    <color name="primaryText">#FFFFFF</color>
+    <color name="secondaryText">#AAAAAA</color>
+
+    <!-- Icon tint for the app icon in the bubble -->
+    <color name="iconTint">#FFFFFF</color>
+
+    <!-- Status indicator bg – placeholder light gray -->
+    <color name="statusIndicatorBg">#BBBBBB</color>
+</resources>

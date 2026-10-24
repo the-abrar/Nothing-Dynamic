@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/baseDark">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nothing Dynamic"
+        android:textAppearance="@style/TextAppearance.Dynamic.Title"
+        android:textColor="@color/primaryText"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Overlay activation switch -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Switch
+            android:id="@+id/toggle_overlay_switch"
+            android:text="Enable Overlay"
+            android:textColor="@color/primaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_request_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Overlay Permission"
+        android:layout_marginTop="12dp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:textColor="@color/primaryText"
+        android:backgroundTint="@color/baseDark" />
+
+    <Button
+        android:id="@+id/button_check_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Notification Access"
+        android:layout_marginTop="12dp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:textColor="@color/primaryText"
+        android:backgroundTint="@color/baseDark" />
+
+</LinearLayout>

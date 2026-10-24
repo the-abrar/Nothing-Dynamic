@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nothing.dynamic">
+
+    <!-- Permissions for overlay and notification listening -->
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application android:label="Nothing Dynamic"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:theme="@style/Theme.NothingDynamic"
+        android:usesCleartextTraffic="false">
+
+        <!-- OverlayService will be started by the app and draws on top of the screen -->
+        <service android:name="com.nothing.dynamic.OverlayService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+
+        <!-- NotificationService for capturing status bar notifications -->
+        <service android:name="com.nothing.dynamic.NotificationService"
+            android:exported="false"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+    </application>
+</manifest>
