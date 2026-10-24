@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://android.com">
-    <theme name="Theme.NothingDynamic" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.NothingDynamic" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/baseDark</item>
         <item name="colorPrimaryVariant">@color/baseDark</item>
         <item name="colorOnPrimary">@color/primaryText</item>
         <item name="android:windowBackground">@color/baseDark</item>
-    </theme>
+    </style>
 
     <style name="TextAppearance.Dynamic.Title" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@color/primaryText</item>
