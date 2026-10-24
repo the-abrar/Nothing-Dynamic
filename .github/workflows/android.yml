@@ -24,8 +24,8 @@ jobs:
       - name: Make Gradle wrapper executable
         run: chmod +x gradlew
 
-      - name: Grant execute permission to Gradlew and run build
-        run: ./gradlew assembleDebug
+      - name: Run Gradle build with system Gradle
+        run: gradle assembleDebug
 
       - name: Upload APK as artifact
         uses: actions/upload-artifact@v4
