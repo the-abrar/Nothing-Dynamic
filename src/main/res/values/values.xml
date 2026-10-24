@@ -1,4 +1,5 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://android.com">
     <theme name="Theme.NothingDynamic" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/baseDark</item>
         <item name="colorPrimaryVariant">@color/baseDark</item>
@@ -8,12 +9,10 @@
 
     <style name="TextAppearance.Dynamic.Title" parent="TextAppearance.AppCompat.Medium">
         <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="TextAppearance.Dynamic.Subtitle" parent="TextAppearance.AppCompat.Small">
         <item name="android:textColor">@color/secondaryText</item>
     </style>
-
-    <!-- Placeholder custom drawable for status indicator
-    <item name="status_indicator_bg">@drawable/status_indicator_bg</item>
 </resources>
